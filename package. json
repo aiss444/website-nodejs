@@ -1,0 +1,16 @@
+{
+  "name": "website-nodejs",
+  "version": "1.0.0",
+  "description": "Website sederhana dengan Node.js",
+  "main": "api/index.js",
+  "scripts": {
+    "start": "node api/index.js",
+    "dev": "node api/index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
