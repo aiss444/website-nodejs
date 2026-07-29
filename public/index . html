@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Pertamaku 🚀</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-brand">🚀 WebKu</div>
+        <div class="nav-menu" id="navMenu">
+            <a href="#home">Home</a>
+            <a href="#fitur">Fitur</a>
+            <a href="#api">API Demo</a>
+            <a href="#kontak">Kontak</a>
+        </div>
+        <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="badge">✨ Dibuat dari HP Android</div>
+            <h1>Selamat Datang di <br><span class="gradient-text">Website Pertamaku!</span></h1>
+            <p>Website Node.js yang dibuat langsung dari HP Android menggunakan GitHub dan di-deploy gratis ke Vercel.</p>
+            <div class="hero-btns">
+                <a href="#api" class="btn btn-primary">🔥 Lihat Demo API</a>
+                <a href="#fitur" class="btn btn-outline">Pelajari Lebih</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="code-card">
+                <div class="code-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="code-title">index.js</span>
+                </div>
+                <div class="code-body">
+                    <p><span class="c-pink">const</span> <span class="c-blue">express</span> = require(<span class="c-green">'express'</span>);</p>
+                    <p><span class="c-pink">const</span> app = <span class="c-blue">express</span>();</p>
+                    <br>
+                    <p>app.<span class="c-yellow">get</span>(<span class="c-green">'/'</span>, (req, res) => {'{'})</p>
+                    <p>&nbsp;&nbsp;res.<span class="c-yellow">send</span>(<span class="c-green">'Halo Dunia!'</span>);</p>
+                    <p>{'}'});</p>
+                    <br>
+                    <p>app.<span class="c-yellow">listen</span>(<span class="c-orange">3000</span>);</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FITUR SECTION -->
+    <section id="fitur" class="section">
+        <div class="section-header">
+            <h2>🛠️ Teknologi yang Dipakai</h2>
+            <p>Stack sederhana tapi powerful untuk membuat website modern</p>
+        </div>
+        <div class="cards-grid">
+            <div class="card">
+                <div class="card-icon">💚</div>
+                <h3>Node.js</h3>
+                <p>Runtime JavaScript untuk menjalankan kode di sisi server dengan performa tinggi</p>
+                <div class="card-tag">Backend</div>
+            </div>
+            <div class="card">
+                <div class="card-icon">⚡</div>
+                <h3>Express.js</h3>
+                <p>Framework Node.js yang ringan dan fleksibel untuk membuat server dan API</p>
+                <div class="card-tag">Framework</div>
+            </div>
+            <div class="card">
+                <div class="card-icon">🐙</div>
+                <h3>GitHub</h3>
+                <p>Platform untuk menyimpan dan mengelola kode source website secara online</p>
+                <div class="card-tag">Repository</div>
+            </div>
+            <div class="card">
+                <div class="card-icon">▲</div>
+                <h3>Vercel</h3>
+                <p>Platform deploy gratis dengan CDN global dan HTTPS otomatis</p>
+                <div class="card-tag">Hosting</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- API DEMO SECTION -->
+    <section id="api" class="section section-dark">
+        <div class="section-header">
+            <h2>⚡ Demo API</h2>
+            <p>Coba langsung endpoint API yang sudah dibuat</p>
+        </div>
+        <div class="api-demo">
+
+            <!-- Endpoint 1 -->
+            <div class="api-card">
+                <div class="api-endpoint">
+                    <span class="method get">GET</span>
+                    <code>/api/hello</code>
+                    <button class="btn-coba" onclick="callApi('/api/hello', 'result1')">Coba ▶</button>
+                </div>
+                <p class="api-desc">Menampilkan pesan salam dan waktu sekarang</p>
+                <div class="api-result" id="result1">
+                    <span class="placeholder">// Tap "Coba" untuk melihat response...</span>
+                </div>
+            </div>
+
+            <!-- Endpoint 2 -->
+            <div class="api-card">
+                <div class="api-endpoint">
+                    <span class="method get">GET</span>
+                    <code>/api/info</code>
+                    <button class="btn-coba" onclick="callApi('/api/info', 'result2')">Coba ▶</button>
+                </div>
+                <p class="api-desc">Menampilkan informasi website</p>
+                <div class="api-result" id="result2">
+                    <span class="placeholder">// Tap "Coba" untuk melihat response...</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- LANGKAH-LANGKAH -->
+    <section class="section">
+        <div class="section-header">
+            <h2>📱 Cara Membuat Website Ini</h2>
+            <p>Langkah mudah membuat website dari HP Android</p>
+        </div>
+        <div class="steps">
+            <div class="step">
+                <div class="step-num">1</div>
+                <div class="step-content">
+                    <h3>Buat Repository GitHub</h3>
+                    <p>Buat repository baru di GitHub sebagai tempat menyimpan kode website</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div class="step-content">
+                    <h3>Buat File di GitHub</h3>
+                    <p>Buat file HTML, CSS, dan JavaScript langsung di browser tanpa perlu laptop</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <div class="step-content">
+                    <h3>Connect ke Vercel</h3>
+                    <p>Hubungkan repository GitHub ke Vercel dengan login menggunakan akun GitHub</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-num">4</div>
+                <div class="step-content">
+                    <h3>Deploy & LIVE! 🎉</h3>
+                    <p>Vercel otomatis deploy website dan memberikan URL yang bisa diakses siapa saja</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAK SECTION -->
+    <section id="kontak" class="section section-dark">
+        <div class="section-header">
+            <h2>📬 Hubungi Saya</h2>
+            <p>Punya pertanyaan? Kirim pesan!</p>
+        </div>
+        <form class="form" onsubmit="kirimPesan(event)">
+            <div class="form-group">
+                <label>Nama</label>
+                <input type="text" id="nama" placeholder="Masukkan nama Anda" required>
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" id="email" placeholder="email@contoh.com" required>
+            </div>
+            <div class="form-group">
+                <label>Pesan</label>
+                <textarea id="pesan" rows="4" placeholder="Tulis pesan Anda di sini..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%">
+                Kirim Pesan 📨
+            </button>
+            <div id="form-status"></div>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">🚀 WebKu</div>
+            <p>Dibuat dengan ❤️ dari HP Android</p>
+            <p>Node.js + Express + GitHub + Vercel</p>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Website Pertamaku. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // ============================
+        // TOGGLE MENU MOBILE
+        // ============================
+        function toggleMenu() {
+            const menu = document.getElementById('navMenu');
+            menu.classList.toggle('active');
+        }
+
+        // Tutup menu saat tap link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navMenu').classList.remove('active');
+            });
+        });
+
+        // ============================
+        // PANGGIL API
+        // ============================
+        async function callApi(endpoint, resultId) {
+            const resultDiv = document.getElementById(resultId);
+            resultDiv.innerHTML = '<span class="loading">⏳ Loading...</span>';
+
+            try {
+                const response = await fetch(endpoint);
+                const data = await response.json();
+
+                // Format JSON dengan indentasi
+                const formatted = JSON.stringify(data, null, 2);
+                resultDiv.innerHTML = `<pre class="json-result">${syntaxHighlight(formatted)}</pre>`;
+            } catch (error) {
+                resultDiv.innerHTML = '<span class="error">❌ Error: Gagal mengambil data</span>';
+            }
+        }
+
+        // Warnai syntax JSON
+        function syntaxHighlight(json) {
+            return json.replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, (match) => {
+                let cls = 'json-num';
+                if (/^"/.test(match)) {
+                    cls = /:$/.test(match) ? 'json-key' : 'json-str';
+                } else if (/true|false/.test(match)) {
+                    cls = 'json-bool';
+                }
+                return `<span class="${cls}">${match}</span>`;
+            });
+        }
+
+        // ============================
+        // FORM SUBMIT
+        // ============================
+        function kirimPesan(event) {
+            event.preventDefault();
+            const nama = document.getElementById('nama').value;
+            const status = document.getElementById('form-status');
+
+            status.innerHTML = `
+                <div class="success-msg">
+                    ✅ Terima kasih <strong>${nama}</strong>! Pesan kamu sudah diterima.
+                    <br>(Ini demo - belum ada backend form handler 😄)
+                </div>
+            `;
+
+            event.target.reset();
+
+            setTimeout(() => {
+                status.innerHTML = '';
+            }, 5000);
+        }
+
+        // ============================
+        // SCROLL ANIMATION
+        // ============================
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.card, .step, .api-card').forEach(el => {
+            el.classList.add('animate');
+            observer.observe(el);
+        });
+    </script>
+
+</body>
+</html>
